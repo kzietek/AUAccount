@@ -8,7 +8,7 @@
 
 // Frameworks
 #import <Foundation/Foundation.h>
-#import "SSKeychain.h"
+#import "SAMKeychain.h"
 
 @class AUAccount;
 typedef void (^AUAccountLogoutBlock)(AUAccount* account, id<NSCoding> user);

@@ -173,7 +173,7 @@ NSString * const kAUAccountExpirationDateKey = @"kAUAccountExpirationDateKey";
 #else
     
     NSString *serviceName = self.serviceName;
-    return [SSKeychain passwordForService:serviceName
+    return [SAMKeychain passwordForService:serviceName
                                   account:accountName
                                     error:error];
 #endif
@@ -187,7 +187,7 @@ NSString * const kAUAccountExpirationDateKey = @"kAUAccountExpirationDateKey";
     return YES;
 #else
     NSString *serviceName = self.serviceName;
-    return [SSKeychain setPassword:token
+    return [SAMKeychain setPassword:token
                         forService:serviceName
                            account:accountName
                              error:error];
